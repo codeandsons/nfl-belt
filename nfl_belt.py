@@ -1,7 +1,5 @@
-import numpy as np
 import csv
 import networkx as nx
-from pprint import pprint
 
 schedule_file = 'schedule.csv'
 
@@ -21,7 +19,7 @@ teams=["Seattle Seahawks", "New York Jets", "Houston Texans",
 
 for team in teams:
     g.add_node((team, 1))
-    for week in range(2, 18):
+    for week in range(2, 19):
         g.add_node((team, week))
         g.add_edge((team, week - 1), (team, week))
 
@@ -33,21 +31,19 @@ for row in csv.DictReader(open(schedule_file, 'rb')):
     g.add_edge((home, week), (visitor, week + 1))
 
 
-current_holder =("St. Louis Rams", 10)
+current_holder =("St. Louis Rams", 14)
 desc = nx.descendants(g, current_holder)
 desc.add(current_holder)
-belt_paths = g.subgraph(desc)
+from_holder = g.subgraph(desc)
 
-print belt_paths.nodes()
+print "run:"
 for team in teams:
-    reachables = [(t, w) for t, w in belt_paths.nodes() if t == team]
-    reachables = sorted(reachables, lambda x,y: cmp(x[1], y[1]))
-    if reachables:
-        print "Team: ", team
-        for reachable in reachables:
-            for path in nx.all_simple_paths(belt_paths, current_holder, reachable):
-                print "\tpath:"
-                prev = path.pop(0)[0]
-                for node in path:
-                    print "\t\t{}: {} -> {}".format(node[1] - 1, prev, node[0])
-                    prev = node[0]
+    team_18 = (team, 18)
+    if team_18 in from_holder.nodes():
+        reversed_ = from_holder.reverse()
+        desc = nx.descendants(reversed_, team_18)
+        desc.add(team_18)
+        to_team = from_holder.subgraph(desc)
+        nx.write_dot(to_team,"{}.dot".format(team))
+        print '\tdot -Tpng "{0}.dot" > "{0}.png"'.format(team)
+
