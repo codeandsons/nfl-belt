@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- vim: sw=2:foldmethod=indent: 
+-->
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="jquery-2.1.1.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <script>
+      $(document).ready(function(){
+        var shown = null;
+        {% for team in teams %}
+          $("#{{team_ids[team]}}-line").click(function(e) {
+            var group = $("#{{team_ids[team]}}-group");
+            if( shown && shown != group) {
+              shown.hide();
+            }
+            shown = $("#{{team_ids[team]}}-group");
+            shown.show();
+          });
+        {% endfor %}
+      });
+    </script>
+    <header>
+    </header>
+    <section>
+      <svg width="{{width}}" height="{{height}}">
+        <defs>
+          <filter id="line-blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+          </filter>
+
+          <filter id="drop-shadow"x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="black-glow"/>
+            <feOffset in="shadow" dx="1.5" dy="1.5" result="offset-shadow" />
+            <feColorMatrix type="matrix" result="shadow"
+              values="1 0 0 0 0 
+                      0 1 0 0 0 
+                      0 0 1 0 0 
+                      0 0 0 0.4 0"/>
+            <feMerge>
+              <feMergeNode in="black-glow"/>
+              <feMergeNode in="shadow"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+
+          <filter id="gold-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="2"
+            result="fat-alpha"/>
+            <feFlood flood-color="gold" />
+            <feComposite in2="fat-alpha" operator="in" result="gold-road" />
+            <feMerge>
+              <feMergeNode in="gold-road" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+
+          <filter id="desaturate-logo">
+            <feColorMatrix
+              type="saturate"
+              values="0.4" />
+          </filter>
+          {% for t1 in teams %}
+          {% for t2 in teams %}
+          {%  if x[t1] >= x[t2] %}
+          {%    set t1_ = t2    %}
+          {%    set t2_ = t1    %}
+          {%  else              %}
+          {%    set t1_ = t1    %}
+          {%    set t2_ = t2    %}
+          {%  endif             %}
+            <linearGradient id="{{team_ids[t1]}}-{{team_ids[t2]}}" x1="0%" x2="100%" y1="0%" y2="0%">
+              <stop class="{{team_ids[t1_]}}" offset="20%"></stop>
+              <stop class="{{team_ids[t2_]}}" offset="80%"></stop>
+            </linearGradient>
+            <linearGradient id="{{team_ids[t1]}}-{{team_ids[t2]}}-outline">
+              <stop class="{{team_ids[t1_]}}-outline" offset="20%"></stop>
+              <stop class="{{team_ids[t2_]}}-outline" offset="80%"></stop>
+            </linearGradient>
+            {% endfor %}
+          {% endfor %}
+        </defs>
+        <g class="weeks" >
+          {% for week in range(1,19) %}
+            <line
+            x1="{{gutter[0]}}" y1="{{y[week]}}"
+            x2="{{width - gutter[2]}}" y2="{{y[week]}}">
+            </line>
+            <text
+              x="5" y="{{y[week]}}">
+              {{week}}
+            </text>
+          {% endfor %}
+        </g>
+        <g class="teams"
+          stroke-width="{{stroke_width * 0.7}}"> 
+          <!-- http://www.playoffmagic.com/img/nfl/team_1/team_1_50_50.png -->
+          {% for team in teams %}
+          <g
+            id="{{team_ids[team]}}-line">
+            <!-- <rect  -->
+            <!-- width="{{team_sep}}"  -->
+            <!-- height="{{height - gutter[3] - gutter[1]}}"  -->
+            <!-- x="{{x[team] - team_sep / 2.0}}" -->
+            <!-- y="{{gutter[1]}}"  -->
+            <!-- opacity="1%"> -->
+            <!-- </rect> -->
+            <line 
+            class="drop-shadow"
+            x1="{{x[team]}}"
+            y1="{{gutter[1]}}"
+            x2="{{x[team]}}"
+            y2="{{height - gutter[3]}}">
+            <!-- filter="url(#line-blur)" -->
+            </line>
+            <line 
+            x1="{{x[team]}}"
+            y1="{{gutter[1]}}"
+            x2="{{x[team]}}"
+            y2="{{height - gutter[3]}}">
+            </line>
+            <text
+              x="{{x[team]}}" y="{{gutter[1] / 1.1}}" 
+              transform="rotate(-60 {{x[team]}},{{gutter[1]/1.1}})">
+              {{team}}
+            </text>
+            {% set img_dim_ = img_dim * 0.8 %}
+            <g class="team-line-logos">
+              {% for week in range(1,19) %}
+                <image
+                  xlink:href="{{logos[team]}}"
+                  x="{{x[team] - img_dim_ / 2.0}}"
+                  y="{{y[week]- img_dim_ / 2.0}}"
+                  height="{{img_dim_}}"
+                  width="{{img_dim_}}" >
+                  <!-- filter="url(#desaturate-logo)" -->
+                </image>
+              {% endfor %}
+            </g>
+          </g>
+          {% endfor %}
+        </g>
+        {% for t in teams if graphs.has_key(t) %}
+          <g id="{{team_ids[t]}}-group" 
+            class="graphs" >
+            {% for week in edge_sets[t]|reverse                                    %}
+              <g class="team-week-paths">
+                {% if loop.last %}
+                <g class="main-path">
+                {% endif %}
+                {% for edge in week                                                  %}
+                  {% set grad_id = team_ids[edge[0][0]] + '-' + team_ids[edge[1][0]] %}
+                  {% set t1 = edge[0][0]                                             %}
+                  {% set t2 = edge[1][0]                                             %}
+                  {% set w1 = edge[0][1]                                             %}
+                  {% set w2 = edge[1][1]                                             %}
+                  {% set x1 = x[t1]                                                  %}
+                  {% set y1 = y[w1]                                                  %}
+                  {% set x2 = x[t2]                                                  %}
+                  {% set y2 = y[w2]                                                  %}
+                  {% set yoff = 0.01 * height * ( log_diffs[t1][t2])                 %}
+                  {% set cx1 = x[t1]                                                 %}
+                  {% set cy1 = y[w1] + yoff                                          %}
+                  {% set cx2 = x[t2]                                                 %}
+                  {% set cy2 = y[w2] - yoff                                          %}
+                    <path 
+                      {% if t1 == t2 %}
+                      class="outline {{team_ids[t1]}}-outline-stroke"
+                      {% else %}
+                      class="outline"
+                      stroke="url(#{{grad_id}}-outline)"
+                      {% endif %}
+                      stroke-width="{{stroke_width}}" 
+                      d="M {{x1}},{{y1}} C {{cx1}},{{cy1}} {{cx2}},{{cy2}} {{x2}},{{y2}}">
+                    </path>
+
+                    <path 
+                      {% if t1 == t2 %}
+                      class="{{team_ids[t1]}}-stroke"
+                      {% else %}
+                      stroke="url(#{{grad_id}})"
+                      {% endif %}
+                      stroke-width="{{stroke_width * 0.5}}"
+                      d="M {{x1}},{{y1}} C {{cx1}},{{cy1}} {{cx2}},{{cy2}} {{x2}},{{y2}}">
+                    </path>
+                {% endfor %}
+                {% if loop.last %}
+                </g>
+                {% endif %}
+              </g>
+            {% endfor %}
+            <g class="logos">
+            {% for node in graphs[t].nodes()                     %}
+              {% set t = node[0] %}
+              {% set w = node[1] %}
+              <image
+                xlink:href="{{logos[t]}}"
+                x="{{x[t] - img_dim / 2.0}}"
+                y="{{y[w] - img_dim / 2.0}}"
+                height="{{img_dim}}"
+                width="{{img_dim}}" >
+              </image>
+            {% endfor %}
+            </g>
+          </g> 
+        {% endfor %}
+      </svg>
+    </section>
+    <footer>
+
+    </footer>
+  </body>
+</html>
