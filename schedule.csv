@@ -1,20 +1,20 @@
 Week,VisTm,HomeTm
-1,Seattle Seahawks,Green Bay Packers
-1,Carolina Panthers,Tampa Bay Buccaneers
-1,Denver Broncos,Indianapolis Colts
-1,Houston Texans,Washington Redskins
-1,Pittsburgh Steelers,Cleveland Browns
-1,Miami Dolphins,New England Patriots
-1,New York Jets,Oakland Raiders
-1,Tennessee Titans,Kansas City Chiefs
-1,San Francisco 49ers,Dallas Cowboys
-1,Minnesota Vikings,St. Louis Rams
-1,Cincinnati Bengals,Baltimore Ravens
-1,Philadelphia Eagles,Jacksonville Jaguars
-1,Buffalo Bills,Chicago Bears
-1,Atlanta Falcons,New Orleans Saints
-1,Arizona Cardinals,San Diego Chargers
-1,Detroit Lions,New York Giants
+1,Carolina Panthers,Denver Broncos
+1,Tampa Bay Buccaneers,Atlanta Falcons
+1,Minnesota Vikings,Tennessee Titans
+1,Cleveland Browns,Philadelphia Eagles
+1,Cincinnati Bengals,New York Jets
+1,Oakland Raiders,New Orleans Saints
+1,San Diego Chargers,Kansas City Chiefs
+1,Buffalo Bills,Baltimore Ravens
+1,Chicago Bears,Houston Texans
+1,Green Bay Packers,Jacksonville Jaguars
+1,Miami Dolphins,Seattle Seahawks
+1,New York Giants,Dallas Cowboys
+1,Detroit Lions,Indianapolis Colts
+1,New England Patriots,Arizona Cardinals
+1,Pittsburgh Steelers,Washington Redskins
+1,St. Louis Rams,San Francisco 49ers
 2,Baltimore Ravens,Pittsburgh Steelers
 2,Cleveland Browns,New Orleans Saints
 2,San Diego Chargers,Seattle Seahawks
