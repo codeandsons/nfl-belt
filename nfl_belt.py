@@ -21,7 +21,7 @@ import networkx as nx
 from jinja2 import Template
 
 # config
-current_holder =("Philadelphia Eagles", 6)
+current_holder =("Denver Broncos", 1)
 schedule_file = 'schedule.csv'
 
 teams = [
@@ -155,5 +155,3 @@ with open(template_file, 'r') as t:
             log_diffs=log_diffs,
             team_sep=team_sep
             ))
-
-
