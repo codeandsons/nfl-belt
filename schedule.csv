@@ -15,38 +15,38 @@ Week,VisTm,HomeTm
 1,New England Patriots,Arizona Cardinals
 1,Pittsburgh Steelers,Washington Redskins
 1,Los Angeles Rams,San Francisco 49ers
-2,Baltimore Ravens,Pittsburgh Steelers
-2,Cleveland Browns,New Orleans Saints
-2,San Diego Chargers,Seattle Seahawks
-2,Arizona Cardinals,New York Giants
-2,Washington Redskins,Jacksonville Jaguars
-2,Green Bay Packers,New York Jets
-2,Chicago Bears,San Francisco 49ers
-2,Carolina Panthers,Detroit Lions
-2,Buffalo Bills,Miami Dolphins
-2,New England Patriots,Minnesota Vikings
-2,Houston Texans,Oakland Raiders
-2,Los Angeles Rams,Tampa Bay Buccaneers
-2,Denver Broncos,Kansas City Chiefs
-2,Cincinnati Bengals,Atlanta Falcons
-2,Dallas Cowboys,Tennessee Titans
-2,Philadelphia Eagles,Indianapolis Colts
-3,Atlanta Falcons,Tampa Bay Buccaneers
-3,New Orleans Saints,Minnesota Vikings
-3,Baltimore Ravens,Cleveland Browns
+2,New York Jets,Buffalo Bills
+2,San Francisco 49ers,Carolina Panthers
+2,Dallas Cowboys,Washington Redskins
+2,Cincinnati Bengals,Pittsburgh Steelers
+2,New Orleans Saints,New York Giants
+2,Miami Dolphins,New England Patriots
+2,Kansas City Chiefs,Houston Texans
+2,Tennessee Titans,Detroit Lions
+2,Baltimore Ravens,Cleveland Browns
+2,Seattle Seahawks,Los Angeles Rams
+2,Tampa Bay Buccaneers,Arizona Cardinals
+2,Jacksonville Jaguars,San Diego Chargers
+2,Atlanta Falcons,Oakland Raiders
+2,Indianapolis Colts,Denver Broncos
+2,Green Bay Packers,Minnesota Vikings
+2,Philadelphia Eagles,Chicago Bears
+3,Houston Texans,New England Patriots
+3,Arizona Cardinals,Buffalo Bills
+3,Oakland Raiders,Tennessee Titans
+3,Washington Redskins,New York Giants
+3,Cleveland Browns,Miami Dolphins
+3,Baltimore Ravens,Jacksonville Jaguars
 3,Detroit Lions,Green Bay Packers
-3,New England Patriots,Oakland Raiders
-3,San Diego Chargers,Buffalo Bills
-3,New York Giants,Houston Texans
-3,Kansas City Chiefs,Miami Dolphins
-3,Seattle Seahawks,Denver Broncos
-3,Arizona Cardinals,San Francisco 49ers
-3,Pittsburgh Steelers,Carolina Panthers
-3,Indianapolis Colts,Jacksonville Jaguars
-3,Cincinnati Bengals,Tennessee Titans
-3,Dallas Cowboys,Los Angeles Rams
-3,Philadelphia Eagles,Washington Redskins
-3,Chicago Bears,New York Jets
+3,Denver Broncos,Cincinnati Bengals
+3,Minnesota Vikings,Carolina Panthers
+3,Los Angeles Rams,Tampa Bay Buccaneers
+3,San Francisco 49ers,Seattle Seahawks
+3,New York Jets,Kansas City Chiefs
+3,San Diego Chargers,Indianapolis Colts
+3,Pittsburgh Steelers,Philadelphia Eagles
+3,Chicago Bears,Dallas Cowboys
+3,Atlanta Falcons,New Orleans Saints
 4,New York Giants,Washington Redskins
 4,Minnesota Vikings,Atlanta Falcons
 4,Baltimore Ravens,Carolina Panthers
