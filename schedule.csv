@@ -148,20 +148,20 @@ Week,VisTm,HomeTm
 10,Dallas Cowboys,Jacksonville Jaguars
 10,New York Jets,Pittsburgh Steelers
 10,Philadelphia Eagles,Carolina Panthers
-11,Miami Dolphins,Buffalo Bills
-11,Houston Texans,Cleveland Browns
-11,Chicago Bears,Minnesota Vikings
-11,Kansas City Chiefs,Seattle Seahawks
-11,Arizona Cardinals,Detroit Lions
-11,San Francisco 49ers,New York Giants
-11,Cincinnati Bengals,New Orleans Saints
-11,Los Angeles Rams,Denver Broncos
-11,Tampa Bay Buccaneers,Washington Redskins
-11,Atlanta Falcons,Carolina Panthers
-11,Green Bay Packers,Philadelphia Eagles
-11,New England Patriots,Indianapolis Colts
-11,San Diego Chargers,Oakland Raiders
-11,Pittsburgh Steelers,Tennessee Titans
+11,New Orleans Saints,Carolina Panthers
+11,Pittsburgh Steelers,Cleveland Browns
+11,Baltimore Ravens,Dallas Cowboys
+11,Jacksonville Jaguars,Detroit Lions
+11,Tennessee Titans,Indianapolis Colts
+11,Buffalo Bills,Cincinnati Bengals
+11,Tampa Bay Buccaneers,Kansas City Chiefs
+11,Chicago Bears,New York Giants
+11,Arizona Cardinals,Minnesota Vikings
+11,Miami Dolphins,Los Angeles Rams
+11,New England Patriots,San Francisco 49ers
+11,Philadelphia Eagles,Seattle Seahawks
+11,Green Bay Packers,Washington Redskins
+11,Houston Texans,Oakland Raiders
 12,Minnesota Vikings,Detroit Lions
 12,Washington Redskins,Dallas Cowboys
 12,Pittsburgh Steelers,Indianapolis Colts
@@ -250,7 +250,7 @@ Week,VisTm,HomeTm
 17,Jacksonville Jaguars,Indianapolis Colts
 17,New England Patriots,Miami Dolphins
 17,Chicago Bears,Minnesota Vikings
-17,Buffo,New York Jets
+17,Buffalo Bills,New York Jets
 17,Dallas Cowboys,Philadelphia Eagles
 17,Cleveland Browns,Pittsburgh Steelers
 17,Arizona Cardinals,Los Angeles Rams
