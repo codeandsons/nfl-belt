@@ -14,7 +14,7 @@ Week,VisTm,HomeTm
 1,Detroit Lions,Indianapolis Colts
 1,New England Patriots,Arizona Cardinals
 1,Pittsburgh Steelers,Washington Redskins
-1,St. Louis Rams,San Francisco 49ers
+1,Los Angeles Rams,San Francisco 49ers
 2,Baltimore Ravens,Pittsburgh Steelers
 2,Cleveland Browns,New Orleans Saints
 2,San Diego Chargers,Seattle Seahawks
@@ -26,7 +26,7 @@ Week,VisTm,HomeTm
 2,Buffalo Bills,Miami Dolphins
 2,New England Patriots,Minnesota Vikings
 2,Houston Texans,Oakland Raiders
-2,St. Louis Rams,Tampa Bay Buccaneers
+2,Los Angeles Rams,Tampa Bay Buccaneers
 2,Denver Broncos,Kansas City Chiefs
 2,Cincinnati Bengals,Atlanta Falcons
 2,Dallas Cowboys,Tennessee Titans
@@ -44,7 +44,7 @@ Week,VisTm,HomeTm
 3,Pittsburgh Steelers,Carolina Panthers
 3,Indianapolis Colts,Jacksonville Jaguars
 3,Cincinnati Bengals,Tennessee Titans
-3,Dallas Cowboys,St. Louis Rams
+3,Dallas Cowboys,Los Angeles Rams
 3,Philadelphia Eagles,Washington Redskins
 3,Chicago Bears,New York Jets
 4,New York Giants,Washington Redskins
@@ -70,7 +70,7 @@ Week,VisTm,HomeTm
 5,New York Giants,Atlanta Falcons
 5,Pittsburgh Steelers,Jacksonville Jaguars
 5,Dallas Cowboys,Houston Texans
-5,Philadelphia Eagles,St. Louis Rams
+5,Philadelphia Eagles,Los Angeles Rams
 5,Buffalo Bills,Detroit Lions
 5,San Diego Chargers,New York Jets
 5,San Francisco 49ers,Kansas City Chiefs
@@ -89,12 +89,12 @@ Week,VisTm,HomeTm
 6,Cincinnati Bengals,Carolina Panthers
 6,Tennessee Titans,Jacksonville Jaguars
 6,Green Bay Packers,Miami Dolphins
-6,San Francisco 49ers,St. Louis Rams
+6,San Francisco 49ers,Los Angeles Rams
 7,New England Patriots,New York Jets
 7,Denver Broncos,San Francisco 49ers
 7,Indianapolis Colts,Cincinnati Bengals
 7,Kansas City Chiefs,San Diego Chargers
-7,St. Louis Rams,Seattle Seahawks
+7,Los Angeles Rams,Seattle Seahawks
 7,Arizona Cardinals,Oakland Raiders
 7,Jacksonville Jaguars,Cleveland Browns
 7,Green Bay Packers,Carolina Panthers
@@ -108,7 +108,7 @@ Week,VisTm,HomeTm
 8,Denver Broncos,San Diego Chargers
 8,Cleveland Browns,Oakland Raiders
 8,Arizona Cardinals,Philadelphia Eagles
-8,Kansas City Chiefs,St. Louis Rams
+8,Kansas City Chiefs,Los Angeles Rams
 8,Cincinnati Bengals,Baltimore Ravens
 8,Pittsburgh Steelers,Indianapolis Colts
 8,Detroit Lions,Atlanta Falcons
@@ -128,7 +128,7 @@ Week,VisTm,HomeTm
 9,New England Patriots,Denver Broncos
 9,Arizona Cardinals,Dallas Cowboys
 9,Cleveland Browns,Tampa Bay Buccaneers
-9,St. Louis Rams,San Francisco 49ers
+9,Los Angeles Rams,San Francisco 49ers
 9,Minnesota Vikings,Washington Redskins
 9,Pittsburgh Steelers,Baltimore Ravens
 9,Philadelphia Eagles,Houston Texans
@@ -138,7 +138,7 @@ Week,VisTm,HomeTm
 10,Baltimore Ravens,Tennessee Titans
 10,Seattle Seahawks,New York Giants
 10,Denver Broncos,Oakland Raiders
-10,Arizona Cardinals,St. Louis Rams
+10,Arizona Cardinals,Los Angeles Rams
 10,San Francisco 49ers,New Orleans Saints
 10,Kansas City Chiefs,Buffalo Bills
 10,Green Bay Packers,Chicago Bears
@@ -153,7 +153,7 @@ Week,VisTm,HomeTm
 11,Arizona Cardinals,Detroit Lions
 11,San Francisco 49ers,New York Giants
 11,Cincinnati Bengals,New Orleans Saints
-11,St. Louis Rams,Denver Broncos
+11,Los Angeles Rams,Denver Broncos
 11,Tampa Bay Buccaneers,Washington Redskins
 11,Atlanta Falcons,Carolina Panthers
 11,Green Bay Packers,Philadelphia Eagles
@@ -162,7 +162,7 @@ Week,VisTm,HomeTm
 11,Pittsburgh Steelers,Tennessee Titans
 12,Oakland Raiders,Kansas City Chiefs
 12,New England Patriots,Detroit Lions
-12,San Diego Chargers,St. Louis Rams
+12,San Diego Chargers,Los Angeles Rams
 12,Cincinnati Bengals,Houston Texans
 12,San Francisco 49ers,Washington Redskins
 12,Chicago Bears,Tampa Bay Buccaneers
@@ -189,7 +189,7 @@ Week,VisTm,HomeTm
 13,Minnesota Vikings,Carolina Panthers
 13,Jacksonville Jaguars,New York Giants
 13,New Orleans Saints,Pittsburgh Steelers
-13,St. Louis Rams,Oakland Raiders
+13,Los Angeles Rams,Oakland Raiders
 13,Miami Dolphins,New York Jets
 14,Dallas Cowboys,Chicago Bears
 14,Denver Broncos,Buffalo Bills
@@ -201,13 +201,13 @@ Week,VisTm,HomeTm
 14,Minnesota Vikings,New York Jets
 14,Oakland Raiders,San Francisco 49ers
 14,Carolina Panthers,New Orleans Saints
-14,St. Louis Rams,Washington Redskins
+14,Los Angeles Rams,Washington Redskins
 14,Arizona Cardinals,Kansas City Chiefs
 14,Seattle Seahawks,Philadelphia Eagles
 14,Detroit Lions,Tampa Bay Buccaneers
 14,Baltimore Ravens,Miami Dolphins
 14,Green Bay Packers,Atlanta Falcons
-15,Arizona Cardinals,St. Louis Rams
+15,Arizona Cardinals,Los Angeles Rams
 15,Pittsburgh Steelers,Atlanta Falcons
 15,Green Bay Packers,Buffalo Bills
 15,Tampa Bay Buccaneers,Carolina Panthers
@@ -234,7 +234,7 @@ Week,VisTm,HomeTm
 16,New England Patriots,New York Jets
 16,Kansas City Chiefs,Pittsburgh Steelers
 16,Green Bay Packers,Tampa Bay Buccaneers
-16,New York Giants,St. Louis Rams
+16,New York Giants,Los Angeles Rams
 16,Indianapolis Colts,Dallas Cowboys
 16,Buffalo Bills,Oakland Raiders
 16,Seattle Seahawks,Arizona Cardinals
@@ -253,5 +253,5 @@ Week,VisTm,HomeTm
 17,New Orleans Saints,Tampa Bay Buccaneers
 17,Dallas Cowboys,Washington Redskins
 17,Oakland Raiders,Denver Broncos
-17,St. Louis Rams,Seattle Seahawks
+17,Los Angeles Rams,Seattle Seahawks
 17,Arizona Cardinals,San Francisco 49ers
