@@ -59,7 +59,7 @@ Week,VisTm,HomeTm
 4,Denver Broncos,Tampa Bay Buccaneers
 4,Los Angeles Rams,Arizona Cardinals
 4,New Orleans Saints,San Diego Chargers
-3,Dallas Cowboys,San Francisco 49ers
+4,Dallas Cowboys,San Francisco 49ers
 4,Kansas City Chiefs,Pittsburgh Steelers
 4,New York Giants,Minnesota Vikings
 5,Green Bay Packers,Minnesota Vikings
@@ -225,35 +225,35 @@ Week,VisTm,HomeTm
 15,San Francisco 49ers,Seattle Seahawks
 15,Dallas Cowboys,Philadelphia Eagles
 15,New Orleans Saints,Chicago Bears
+16,New York Giants,Philadelphia Eagles
+16,Miami Dolphins,Buffalo Bills
+16,Tampa Bay Buccaneers,New Orleans Saints
+16,New York Jets,New England Patriots
 16,Tennessee Titans,Jacksonville Jaguars
-16,San Diego Chargers,San Francisco 49ers
-16,Philadelphia Eagles,Washington Redskins
-16,Cleveland Browns,Carolina Panthers
-16,Detroit Lions,Chicago Bears
-16,Baltimore Ravens,Houston Texans
-16,Minnesota Vikings,Miami Dolphins
-16,Atlanta Falcons,New Orleans Saints
-16,New England Patriots,New York Jets
-16,Kansas City Chiefs,Pittsburgh Steelers
-16,Green Bay Packers,Tampa Bay Buccaneers
-16,New York Giants,Los Angeles Rams
-16,Indianapolis Colts,Dallas Cowboys
-16,Buffalo Bills,Oakland Raiders
-16,Seattle Seahawks,Arizona Cardinals
-16,Denver Broncos,Cincinnati Bengals
-17,Carolina Panthers,Atlanta Falcons
-17,Detroit Lions,Green Bay Packers
-17,Jacksonville Jaguars,Houston Texans
-17,San Diego Chargers,Kansas City Chiefs
-17,New York Jets,Miami Dolphins
+16,Minnesota Vikings,Green Bay Packers
+16,San Diego Chargers,Cleveland Browns
+16,Washington Redskins,Chicago Bears
+16,Atlanta Falcons,Carolina Panthers
+16,Indianapolis Colts,Oakland Raiders
+16,Arizona Cardinals,Seattle Seahawks
+16,San Francisco 49ers,Los Angeles Rams
+16,Cincinnati Bengals,Houston Texans
+16,Baltimore Ravens,Pittsburgh Steelers
+16,Denver Broncos,Kansas City Chiefs
+16,Detroit Lions,Dallas Cowboys
+17,New Orleans Saints,Atlanta Falcons
+17,Baltimore Ravens,Cincinnati Bengals
+17,New York Giants,Washington Redskins
+17,Houston Texans,Tennessee Titans
+17,Carolina Panthers,Tampa Bay Buccaneers
+17,Green Bay Packers,Detroit Lions
+17,Jacksonville Jaguars,Indianapolis Colts
+17,New England Patriots,Miami Dolphins
 17,Chicago Bears,Minnesota Vikings
-17,Buffalo Bills,New England Patriots
-17,Philadelphia Eagles,New York Giants
-17,Indianapolis Colts,Tennessee Titans
-17,Cincinnati Bengals,Pittsburgh Steelers
-17,Cleveland Browns,Baltimore Ravens
-17,New Orleans Saints,Tampa Bay Buccaneers
-17,Dallas Cowboys,Washington Redskins
+17,Buffo,New York Jets
+17,Dallas Cowboys,Philadelphia Eagles
+17,Cleveland Browns,Pittsburgh Steelers
+17,Arizona Cardinals,Los Angeles Rams
 17,Oakland Raiders,Denver Broncos
-17,Los Angeles Rams,Seattle Seahawks
-17,Arizona Cardinals,San Francisco 49ers
+17,Kansas City Chiefs,San Diego Chargers
+17,Seattle Seahawks,San Francisco 49ers
