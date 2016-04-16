@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- vim: sw=2:foldmethod=indent: 
+<!-- vim: sw=2:foldmethod=indent:
 -->
 <html>
   <head>
@@ -37,9 +37,9 @@
             <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="black-glow"/>
             <feOffset in="shadow" dx="1.5" dy="1.5" result="offset-shadow" />
             <feColorMatrix type="matrix" result="shadow"
-              values="1 0 0 0 0 
-                      0 1 0 0 0 
-                      0 0 1 0 0 
+              values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
                       0 0 0 0.4 0"/>
             <feMerge>
               <feMergeNode in="black-glow"/>
@@ -97,7 +97,7 @@
           {% endfor %}
         </g>
         <g class="teams"
-          stroke-width="{{stroke_width * 0.7}}"> 
+          stroke-width="{{stroke_width * 0.7}}">
           <!-- http://www.playoffmagic.com/img/nfl/team_1/team_1_50_50.png -->
           {% for team in teams %}
           <g
@@ -109,7 +109,7 @@
             <!-- y="{{gutter[1]}}"  -->
             <!-- opacity="1%"> -->
             <!-- </rect> -->
-            <line 
+            <line
             class="drop-shadow"
             x1="{{x[team]}}"
             y1="{{gutter[1]}}"
@@ -117,14 +117,14 @@
             y2="{{height - gutter[3]}}">
             <!-- filter="url(#line-blur)" -->
             </line>
-            <line 
+            <line
             x1="{{x[team]}}"
             y1="{{gutter[1]}}"
             x2="{{x[team]}}"
             y2="{{height - gutter[3]}}">
             </line>
             <text
-              x="{{x[team]}}" y="{{gutter[1] / 1.1}}" 
+              x="{{x[team]}}" y="{{gutter[1] / 1.1}}"
               transform="rotate(-60 {{x[team]}},{{gutter[1]/1.1}})">
               {{team}}
             </text>
@@ -145,7 +145,7 @@
           {% endfor %}
         </g>
         {% for t in teams if graphs.has_key(t) %}
-          <g id="{{team_ids[t]}}-group" 
+          <g id="{{team_ids[t]}}-group"
             class="graphs" >
             {% for week in edge_sets[t]|reverse                                    %}
               <g class="team-week-paths">
@@ -167,18 +167,18 @@
                   {% set cy1 = y[w1] + yoff                                          %}
                   {% set cx2 = x[t2]                                                 %}
                   {% set cy2 = y[w2] - yoff                                          %}
-                    <path 
+                    <path
                       {% if t1 == t2 %}
                       class="outline {{team_ids[t1]}}-outline-stroke"
                       {% else %}
                       class="outline"
                       stroke="url(#{{grad_id}}-outline)"
                       {% endif %}
-                      stroke-width="{{stroke_width}}" 
+                      stroke-width="{{stroke_width}}"
                       d="M {{x1}},{{y1}} C {{cx1}},{{cy1}} {{cx2}},{{cy2}} {{x2}},{{y2}}">
                     </path>
 
-                    <path 
+                    <path
                       {% if t1 == t2 %}
                       class="{{team_ids[t1]}}-stroke"
                       {% else %}
@@ -206,7 +206,7 @@
               </image>
             {% endfor %}
             </g>
-          </g> 
+          </g>
         {% endfor %}
       </svg>
     </section>

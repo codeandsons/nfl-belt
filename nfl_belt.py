@@ -109,8 +109,8 @@ edge_sets = {t: [w for w in weeks if w] for t, weeks in edge_sets.items()}
 #layout params
 
 height = 1000
-width = 1200
-stroke_width = 0.0007 * width
+width = 1080
+stroke_width = 0.007 * width
 gutter= [50,190,60,30]
 div_sep = 0.02 * width
 conf_sep = 0.01 * width
@@ -137,7 +137,7 @@ team_ids = {team: pat.sub('-', team).lower() for team in teams}
 logos = {team: 'logos/' + pat.sub('_', team) + '_logo.svg' for team in teams}
 template_file = "template.html"
 
-out_file = "out.html"
+out_file = "belt-possibilities.html"
 with open(template_file, 'r') as t:
     template = Template(t.read())
     with open(out_file, 'w') as f:

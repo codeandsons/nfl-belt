@@ -1,0 +1,441 @@
+g.graphs {
+  display: none;
+  /* stroke: black; */
+}
+g.graphs path {
+  fill: none;
+}
+g.graphs circle {
+  stroke: #2b0808;
+}
+g.team-week-paths {
+  /* filter: url(#drop-shadow); */
+}
+g.main-path {
+  /* filter: url(#gold-glow); */
+}
+g.logos {
+  /* filter: url(#drop-shadow); */
+}
+g.team-line-logos {
+  /* filter: url(#desaturate-logo); */
+}
+g.teams line {
+  stroke: #d1d1e0;
+}
+g.teams line.drop-shadow {
+  stroke: black;
+}
+g.teams text {
+  stroke: #333333;
+  stroke-width: 0.1;
+}
+g.teams rect {
+  stroke: none;
+  stroke-width: 0;
+  fill: white;
+}
+g.weeks line {
+  stroke: #e0e0eb;
+  stroke-width: 1;
+}
+g.weeks text {
+  stroke: #333333;
+  stroke-width: 0.1;
+}
+.arizona-cardinals {
+  stop-color: #84161c;
+}
+.arizona-cardinals-outline {
+  stop-color: #ffffff;
+}
+.atlanta-falcons {
+  stop-color: #b01742;
+}
+.atlanta-falcons-outline {
+  stop-color: #161413;
+}
+.baltimore-ravens {
+  stop-color: #27328c;
+}
+.baltimore-ravens-outline {
+  stop-color: #000000;
+}
+.buffalo-bills {
+  stop-color: #194787;
+}
+.buffalo-bills-outline {
+  stop-color: #bf2026;
+}
+.carolina-panthers {
+  stop-color: #0099d8;
+}
+.carolina-panthers-outline {
+  stop-color: #000000;
+}
+.chicago-bears {
+  stop-color: #df6108;
+}
+.chicago-bears-outline {
+  stop-color: #03182f;
+}
+.cincinnati-bengals {
+  stop-color: #f04e23;
+}
+.cincinnati-bengals-outline {
+  stop-color: #ffffff;
+}
+.cleveland-browns {
+  stop-color: #de6308;
+}
+.cleveland-browns-outline {
+  stop-color: #312821;
+}
+.dallas-cowboys {
+  stop-color: #ffffff;
+}
+.dallas-cowboys-outline {
+  stop-color: #0d254c;
+}
+.denver-broncos {
+  stop-color: #de6226;
+}
+.denver-broncos-outline {
+  stop-color: #13264b;
+}
+.detroit-lions {
+  stop-color: #006db0;
+}
+.detroit-lions-outline {
+  stop-color: #ffffff;
+}
+.green-bay-packers {
+  stop-color: #313f36;
+}
+.green-bay-packers-outline {
+  stop-color: #f2c800;
+}
+.houston-texans {
+  stop-color: #06192e;
+}
+.houston-texans-outline {
+  stop-color: #b21e35;
+}
+.indianapolis-colts {
+  stop-color: #023a79;
+}
+.indianapolis-colts-outline {
+  stop-color: #ffffff;
+}
+.jacksonville-jaguars {
+  stop-color: #d2a941;
+}
+.jacksonville-jaguars-outline {
+  stop-color: #00839b;
+}
+.kansas-city-chiefs {
+  stop-color: #b21e35;
+}
+.kansas-city-chiefs-outline {
+  stop-color: #ffffff;
+}
+.miami-dolphins {
+  stop-color: #015e6a;
+}
+.miami-dolphins-outline {
+  stop-color: #de6226;
+}
+.new-england-patriots {
+  stop-color: #0d254c;
+}
+.new-england-patriots-outline {
+  stop-color: #d6d6d6;
+}
+.new-orleans-saints {
+  stop-color: #c6a876;
+}
+.new-orleans-saints-outline {
+  stop-color: #ffffff;
+}
+.new-york-giants {
+  stop-color: #25316a;
+}
+.new-york-giants-outline {
+  stop-color: #b21e35;
+}
+.new-york-jets {
+  stop-color: #0c371d;
+}
+.new-york-jets-outline {
+  stop-color: #ffffff;
+}
+.minnesota-vikings {
+  stop-color: #3C1E5E;
+}
+.minnesota-vikings-outline {
+  stop-color: #EEBF1B;
+}
+.oakland-raiders {
+  stop-color: #010101;
+}
+.oakland-raiders-outline {
+  stop-color: #d2d3d4;
+}
+.philadelphia-eagles {
+  stop-color: #004d55;
+}
+.philadelphia-eagles-outline {
+  stop-color: #bacad3;
+}
+.pittsburgh-steelers {
+  stop-color: #231f20;
+}
+.pittsburgh-steelers-outline {
+  stop-color: #f1c817;
+}
+.san-diego-chargers {
+  stop-color: #3997d3;
+}
+.san-diego-chargers-outline {
+  stop-color: #f0c818;
+}
+.san-francisco-49ers {
+  stop-color: #c81d3c;
+}
+.san-francisco-49ers-outline {
+  stop-color: #c6a463;
+}
+.seattle-seahawks {
+  stop-color: #03182F;
+}
+.seattle-seahawks-outline {
+  stop-color: #4eae17;
+}
+.st-louis-rams {
+  stop-color: #13264b;
+}
+.st-louis-rams-outline {
+  stop-color: #c9af74;
+}
+.los-angeles-rams {
+  stop-color: #13264b;
+}
+.los-angeles-rams-outline {
+  stop-color: #c9af74;
+}
+.tampa-bay-buccaneers {
+  stop-color: #b21e35;
+}
+.tampa-bay-buccaneers-outline {
+  stop-color: #bfc0c0;
+}
+.tennessee-titans {
+  stop-color: #648fcc;
+}
+.tennessee-titans-outline {
+  stop-color: #ffffff;
+}
+.washington-redskins {
+  stop-color: #57211b;
+}
+.washington-redskins-outline {
+  stop-color: #f1c817;
+}
+.arizona-cardinals-stroke {
+  stroke: #84161c;
+}
+.arizona-cardinals-outline-stroke {
+  stroke: #ffffff;
+}
+.atlanta-falcons-stroke {
+  stroke: #b01742;
+}
+.atlanta-falcons-outline-stroke {
+  stroke: #161413;
+}
+.baltimore-ravens-stroke {
+  stroke: #27328c;
+}
+.baltimore-ravens-outline-stroke {
+  stroke: #000000;
+}
+.buffalo-bills-stroke {
+  stroke: #194787;
+}
+.buffalo-bills-outline-stroke {
+  stroke: #bf2026;
+}
+.carolina-panthers-stroke {
+  stroke: #0099d8;
+}
+.carolina-panthers-outline-stroke {
+  stroke: #000000;
+}
+.chicago-bears-stroke {
+  stroke: #df6108;
+}
+.chicago-bears-outline-stroke {
+  stroke: #03182f;
+}
+.cincinnati-bengals-stroke {
+  stroke: #f04e23;
+}
+.cincinnati-bengals-outline-stroke {
+  stroke: #ffffff;
+}
+.cleveland-browns-stroke {
+  stroke: #de6308;
+}
+.cleveland-browns-outline-stroke {
+  stroke: #312821;
+}
+.dallas-cowboys-stroke {
+  stroke: #ffffff;
+}
+.dallas-cowboys-outline-stroke {
+  stroke: #0d254c;
+}
+.denver-broncos-stroke {
+  stroke: #de6226;
+}
+.denver-broncos-outline-stroke {
+  stroke: #13264b;
+}
+.detroit-lions-stroke {
+  stroke: #006db0;
+}
+.detroit-lions-outline-stroke {
+  stroke: #ffffff;
+}
+.green-bay-packers-stroke {
+  stroke: #313f36;
+}
+.green-bay-packers-outline-stroke {
+  stroke: #f2c800;
+}
+.houston-texans-stroke {
+  stroke: #06192e;
+}
+.houston-texans-outline-stroke {
+  stroke: #b21e35;
+}
+.indianapolis-colts-stroke {
+  stroke: #023a79;
+}
+.indianapolis-colts-outline-stroke {
+  stroke: #ffffff;
+}
+.jacksonville-jaguars-stroke {
+  stroke: #d2a941;
+}
+.jacksonville-jaguars-outline-stroke {
+  stroke: #00839b;
+}
+.kansas-city-chiefs-stroke {
+  stroke: #b21e35;
+}
+.kansas-city-chiefs-outline-stroke {
+  stroke: #ffffff;
+}
+.miami-dolphins-stroke {
+  stroke: #015e6a;
+}
+.miami-dolphins-outline-stroke {
+  stroke: #de6226;
+}
+.new-england-patriots-stroke {
+  stroke: #0d254c;
+}
+.new-england-patriots-outline-stroke {
+  stroke: #d6d6d6;
+}
+.new-orleans-saints-stroke {
+  stroke: #c6a876;
+}
+.new-orleans-saints-outline-stroke {
+  stroke: #ffffff;
+}
+.new-york-giants-stroke {
+  stroke: #25316a;
+}
+.new-york-giants-outline-stroke {
+  stroke: #b21e35;
+}
+.new-york-jets-stroke {
+  stroke: #0c371d;
+}
+.new-york-jets-outline-stroke {
+  stroke: #ffffff;
+}
+.minnesota-vikings-stroke {
+  stroke: #3C1E5E;
+}
+.minnesota-vikings-outline-stroke {
+  stroke: #EEBF1B;
+}
+.oakland-raiders-stroke {
+  stroke: #010101;
+}
+.oakland-raiders-outline-stroke {
+  stroke: #d2d3d4;
+}
+.philadelphia-eagles-stroke {
+  stroke: #004d55;
+}
+.philadelphia-eagles-outline-stroke {
+  stroke: #bacad3;
+}
+.pittsburgh-steelers-stroke {
+  stroke: #231f20;
+}
+.pittsburgh-steelers-outline-stroke {
+  stroke: #f1c817;
+}
+.san-diego-chargers-stroke {
+  stroke: #3997d3;
+}
+.san-diego-chargers-outline-stroke {
+  stroke: #f0c818;
+}
+.san-francisco-49ers-stroke {
+  stroke: #c81d3c;
+}
+.san-francisco-49ers-outline-stroke {
+  stroke: #c6a463;
+}
+.seattle-seahawks-stroke {
+  stroke: #03182F;
+}
+.seattle-seahawks-outline-stroke {
+  stroke: #4eae17;
+}
+.st-louis-rams-stroke {
+  stroke: #13264b;
+}
+.st-louis-rams-outline-stroke {
+  stroke: #c9af74;
+}
+.los-angeles-rams-stroke {
+  stroke: #13264b;
+}
+.los-angeles-rams-outline-stroke {
+  stroke: #c9af74;
+}
+.tampa-bay-buccaneers-stroke {
+  stroke: #b21e35;
+}
+.tampa-bay-buccaneers-outline-stroke {
+  stroke: #bfc0c0;
+}
+.tennessee-titans-stroke {
+  stroke: #648fcc;
+}
+.tennessee-titans-outline-stroke {
+  stroke: #ffffff;
+}
+.washington-redskins-stroke {
+  stroke: #57211b;
+}
+.washington-redskins-outline-stroke {
+  stroke: #f1c817;
+}
