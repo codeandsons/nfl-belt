@@ -134,7 +134,7 @@ log_diffs = {t1: {t2:  log(1 + abs(x[t1] - x[t2]))  for t2 in teams} for t1 in t
 import re
 pat = re.compile(r'([.]|\s)+')
 team_ids = {team: pat.sub('-', team).lower() for team in teams}
-logos = {team: 'logos/' + pat.sub('_', team) + '_logo.svg' for team in teams}
+logos = {team: '/nfl/title-belt/nfl-belt/logos/' + pat.sub('_', team) + '_logo.svg' for team in teams}
 template_file = "template.html"
 
 out_file = "belt-possibilities.html"
