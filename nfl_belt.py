@@ -21,7 +21,7 @@ import networkx as nx
 from jinja2 import Template
 
 # config
-current_holder =("Denver Broncos", 1)
+current_holder =("Denver Broncos", 2)
 schedule_file = 'schedule.csv'
 
 teams = [
@@ -134,7 +134,7 @@ log_diffs = {t1: {t2:  log(1 + abs(x[t1] - x[t2]))  for t2 in teams} for t1 in t
 import re
 pat = re.compile(r'([.]|\s)+')
 team_ids = {team: pat.sub('-', team).lower() for team in teams}
-logos = {team: '/nfl/title-belt/nfl-belt/logos/' + pat.sub('_', team) + '_logo.svg' for team in teams}
+logos = {team: '//i.logocdn.com/nfl/current/' + pat.sub('-', team).lower() + '.svg' for team in teams}
 template_file = "template.html"
 
 out_file = "belt-possibilities.html"
